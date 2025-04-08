@@ -1,0 +1,32 @@
+<!--result.wxml-->
+<view class="container">
+  <view class="result-header">
+    <text class="result-title">你的MBTI类型是</text>
+    <text class="result-type">{{mbtiType}}</text>
+  </view>
+
+  <view class="type-description">
+    <text class="description-title">性格特点</text>
+    <text class="description-content">{{typeDescription}}</text>
+  </view>
+
+  <view class="dimensions">
+    <view class="dimension" wx:for="{{dimensions}}" wx:key="index">
+      <text class="dimension-title">{{item.title}}</text>
+      <text class="dimension-value">{{item.value}}</text>
+      <text class="dimension-description">{{item.description}}</text>
+    </view>
+  </view>
+
+  <view class="career-suggestions">
+    <text class="section-title">职业建议</text>
+    <view class="suggestion-list">
+      <text class="suggestion-item" wx:for="{{careerSuggestions}}" wx:key="index">{{item}}</text>
+    </view>
+  </view>
+
+  <view class="actions">
+    <button class="action-button share" bindtap="shareResult">分享结果</button>
+    <button class="action-button retest" bindtap="retest">重新测试</button>
+  </view>
+</view> 

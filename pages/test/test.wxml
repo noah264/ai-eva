@@ -1,0 +1,35 @@
+<!--test.wxml-->
+<view class="container">
+  <view class="progress">
+    <text class="progress-text">第{{currentQuestion + 1}}/{{questions.length}}题</text>
+    <view class="progress-bar">
+      <view class="progress-inner" style="width: {{(currentQuestion + 1) / questions.length * 100}}%"></view>
+    </view>
+  </view>
+
+  <view class="question-container">
+    <text class="question-text">{{questions[currentQuestion].text}}</text>
+    
+    <view class="options">
+      <view class="option {{answers[currentQuestion] === item.type ? 'selected' : ''}}" 
+            wx:for="{{questions[currentQuestion].options}}" 
+            wx:key="index"
+            bindtap="selectOption"
+            data-index="{{index}}">
+        <text class="option-text">{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="navigation">
+    <button class="nav-button prev" 
+            wx:if="{{currentQuestion > 0}}"
+            bindtap="prevQuestion">上一题</button>
+    <button class="nav-button next" 
+            wx:if="{{currentQuestion < questions.length - 1}}"
+            bindtap="nextQuestion">下一题</button>
+    <button class="nav-button submit" 
+            wx:if="{{currentQuestion === questions.length - 1}}"
+            bindtap="submitTest">提交测试</button>
+  </view>
+</view> 

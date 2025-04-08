@@ -14,3 +14,41 @@ page {
 .log-item:last-child {
   padding-bottom: env(safe-area-inset-bottom);
 }
+
+.log-list {
+  padding: 20px;
+}
+
+.log-item {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.log-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.log-action {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.log-value {
+  font-size: 14px;
+  color: #1aad19;
+}
+
+.no-logs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #999;
+}

@@ -5,14 +5,9 @@ Page({
   data: {
     logs: []
   },
-  onLoad() {
+  onShow() {
     this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return {
-          date: util.formatTime(new Date(log)),
-          timeStamp: log
-        }
-      })
-    })
+      logs: wx.getStorageSync('logs') || []
+    });
   }
 })

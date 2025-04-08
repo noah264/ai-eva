@@ -1,6 +1,13 @@
 <!--logs.wxml-->
-<scroll-view class="scrollarea" scroll-y type="list">
-  <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
-    <view class="log-item">{{index + 1}}. {{log.date}}</view>
+<view class="container log-list">
+  <block wx:if="{{logs.length > 0}}">
+    <view class="log-item" wx:for="{{logs}}" wx:key="index">
+      <text class="log-date">{{item.date}}</text>
+      <text class="log-action">{{item.action}}</text>
+      <text class="log-value">值：{{item.value}}</text>
+    </view>
   </block>
-</scroll-view>
+  <view wx:else class="no-logs">
+    <text>暂无日志记录</text>
+  </view>
+</view>

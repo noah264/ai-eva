@@ -1,0 +1,122 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.result-title {
+  font-size: 18px;
+  color: #666;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.result-type {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1aad19;
+}
+
+.type-description {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.description-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.description-content {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.dimensions {
+  margin-bottom: 30px;
+}
+
+.dimension {
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.dimension-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.dimension-value {
+  font-size: 14px;
+  color: #1aad19;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.dimension-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.career-suggestions {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.suggestion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.suggestion-item {
+  font-size: 14px;
+  color: #666;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+.action-button {
+  flex: 1;
+  border-radius: 30px;
+}
+
+.action-button.share {
+  background-color: #1aad19;
+  color: white;
+}
+
+.action-button.retest {
+  background-color: #f8f8f8;
+  color: #333;
+} 
