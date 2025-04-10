@@ -1,10 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="user-info" wx:if="{{userInfo}}">
-    <image class="avatar" src="{{userInfo.avatarUrl}}" mode="aspectFill"></image>
-    <text class="nickname">{{userInfo.nickName}}</text>
-  </view>
-
   <view class="header">
     <image class="logo" src="/images/mbti-logo.png" mode="aspectFit"></image>
     <text class="title">MBTI性格测试</text>

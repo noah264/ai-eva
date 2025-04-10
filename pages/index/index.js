@@ -104,19 +104,19 @@ Page({
 
   startTest() {
     // 检查登录状态
-    if (!app.globalData.isLogin) {
-      wx.showToast({
-        title: '请先登录',
-        icon: 'none'
-      });
-      return;
-    }
+    // if (!app.globalData.isLogin) {
+    //   wx.showToast({
+    //     title: '请先登录',
+    //     icon: 'none'
+    //   });
+    //   return;
+    // }
 
     // 清除之前的测试答案
     wx.removeStorageSync('testHistory');
     
     // 跳转到测试页面
-    wx.navigateTo({
+    wx.switchTab({
       url: '/pages/test/test'
     });
   }
